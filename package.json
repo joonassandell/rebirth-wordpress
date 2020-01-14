@@ -1,0 +1,16 @@
+{
+  "name": "rebirth-wordpress",
+  "version": "0.0.1",
+  "description": "WordPress components for Rebirth",
+  "main": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joonasy/rebirth-wordpress.git"
+  },
+  "author": "Joonas Ylitalo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joonasy/rebirth-wordpress/issues"
+  },
+  "homepage": "https://github.com/joonasy/rebirth-wordpress#readme"
+}

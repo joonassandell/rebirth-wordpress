@@ -1,0 +1,12 @@
+{% if list_items %}
+  <ul class="List List--default">
+    {% for item in list_items %}
+      <li class="List-item">
+        <span class="List-meta">{{ item.meta }}</span>
+        <a class="List-link" href="{{ item.link }}">
+          {{ item.heading }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul
+{% endif %}

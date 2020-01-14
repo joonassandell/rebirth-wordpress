@@ -1,0 +1,26 @@
+<article class="Article Article--default">
+  <h1 class="Article-heading">
+    {% if article_link %}<a href="{{ article_link }}">{% endif %}
+      {{ article_title }}
+    {% if article_link %}</a>{% endif %}
+  </h1>
+  {% if article_date or article_cat %}
+    <ul class="Article-meta">
+      {% if article_date %}
+        <li class="Article-meta-item">{{ article_date }}</li>
+      {% endif %}
+      {% if article_cat %}
+        <li class="Article-meta-item">
+          {% if article_cat_link %}<a href="{{ article_cat_link }}">{% endif %}
+            {{ article_cat }}
+          {% if article_cat_link %}</a>{% endif %}
+        </li>
+      {% endif %}
+    </ul>
+  {% endif %}
+  {% if article_excerpt %}
+    <p class="Article-excerpt">
+      {{ article_excerpt }}
+    </p>
+  {% endif %}
+</article>

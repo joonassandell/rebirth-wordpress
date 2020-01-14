@@ -1,0 +1,14 @@
+{% if nav_links %}
+  <nav class="Nav Nav--default">
+    <ul>
+      {% for item in nav_links %}
+        <li class="Nav-item {{ item.active == item.id ?  'is-active' }}">
+          <a class="Nav-link" href="{{ item.link }}">
+            <span class="Nav-icon"></span>
+            <span class="Nav-heading">{{ item.heading }}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+{% endif %}
