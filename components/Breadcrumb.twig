@@ -1,0 +1,5 @@
+{% if fn('function_exists', 'bcn_display') %}
+  <div class="Breadcrumb Breadcrumb--default">
+    {{ fn('bcn_display') }}
+  </div>
+{% endif %}
