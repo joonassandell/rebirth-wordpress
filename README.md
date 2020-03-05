@@ -6,5 +6,4 @@ This repository contains WordPress components ([Timber](https://timber.github.io
 
 ## License
 
-
 Copyright (c) 2020 Joonas Ylitalo (Twitter: [@joonasy](https://twitter.com/joonasy)). Licensed under the MIT license.
