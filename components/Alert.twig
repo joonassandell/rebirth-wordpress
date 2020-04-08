@@ -1,0 +1,15 @@
+{% if alert_style == 'default' or alert_style == 'info' or alert_style == null %}
+  {% set modifier = 'info' %}
+{% elseif alert_style == 'success' %}
+  {% set modifier = 'success' %}
+{% elseif alert_style == 'warning' %}
+  {% set modifier = 'warning' %}
+{% elseif alert_style == 'danger' %}
+  {% set modifier = 'danger' %}
+{% endif %}
+
+{% if alert_text %}
+  <div class="Alert Alert--{{ modifier }}">
+    {{ alert_text }}
+  </div>
+{% endif %}
