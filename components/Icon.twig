@@ -1,13 +1,16 @@
+{% set context = fn('Timber::get_context') %}
+
 {%
   set vars = {
-    'name': name,
-    'class': class
+    name: name,
+    class: class,
+    theme: context.theme
   }
 %}
 
-{% if WP_DEV %}
-  {% include 'Icon.ref.twig' with vars %}
+{% if context.WP_DEV %}
+  {% include 'Icon.ref.twig' with vars only %}
 {% else %}
-  {% include 'build/components/Icon.ref.twig' with vars %}
+  {% include 'build/components/Icon.ref.twig' with vars only %}
 {% endif %}
 
