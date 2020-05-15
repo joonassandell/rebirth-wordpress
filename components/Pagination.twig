@@ -1,25 +1,27 @@
-<ul class="Pagination Pagination--default">
-  {% if query.pagination.prev %}
-    <li class="Pagination-item {{ query.pagination.prev.link ? : 'is-hidden'}}">
-      <a class="Pagination-link" href="{{ query.pagination.prev.link }}" >
-        {{ _e('Previous', 'app') }}
-      </a>
-    </li>
-  {% endif %}
-  {% for page in query.pagination.pages %}
-    <li class="Pagination-item">
-      {% if page.link %}
-        <a class="Pagination-link {{ page.current ? 'is-active' }}" href="{{ page.link }}">{{ page.title }}</a>
-      {% else %}
-        <span class="Pagination-link {{ page.current ? 'is-active' }}">{{ page.title }}</span>
-      {% endif %}
-    </li>
-  {% endfor %}
-  {% if query.pagination.next %}
-    <li class="Pagination-item {{ query.pagination.next.link ? : 'is-hidden' }}">
-      <a class="Pagination-link" href="{{ query.pagination.next.link }}">
-        {{ _e('Next', 'app') }}
-      </a>
-    </li>
-  {% endif %}
-</ul>
+{% if query %}
+  <ul class="Pagination Pagination--default">
+    {% if query.pagination.prev %}
+      <li class="Pagination-item {{ query.pagination.prev.link ? : 'is-hidden'}}">
+        <a class="Pagination-link" href="{{ query.pagination.prev.link }}" >
+          {{ _e('Previous', 'app') }}
+        </a>
+      </li>
+    {% endif %}
+    {% for page in query.pagination.pages %}
+      <li class="Pagination-item">
+        {% if page.link %}
+          <a class="Pagination-link {{ page.current ? 'is-active' }}" href="{{ page.link }}">{{ page.title }}</a>
+        {% else %}
+          <span class="Pagination-link {{ page.current ? 'is-active' }}">{{ page.title }}</span>
+        {% endif %}
+      </li>
+    {% endfor %}
+    {% if query.pagination.next %}
+      <li class="Pagination-item {{ query.pagination.next.link ? : 'is-hidden' }}">
+        <a class="Pagination-link" href="{{ query.pagination.next.link }}">
+          {{ _e('Next', 'app') }}
+        </a>
+      </li>
+    {% endif %}
+  </ul>
+{% endif %}
