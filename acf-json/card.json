@@ -1,0 +1,109 @@
+[
+    {
+        "key": "card",
+        "title": "Card",
+        "fields": [
+            {
+                "key": "field_5909f9001bf73",
+                "label": "Kuva",
+                "name": "card_figure",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "post-thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5909e0316c42e",
+                "label": "Otsikko",
+                "name": "card_title",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5909e03f6c42f",
+                "label": "Teksti",
+                "name": "card_text",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            },
+            {
+                "key": "field_5cc6c21e1f34b",
+                "label": "Painike",
+                "name": "card_button",
+                "type": "clone",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "clone": [
+                    "field_5ca70d01aa99b",
+                    "field_5ca70cdcaa99a"
+                ],
+                "display": "group",
+                "layout": "table",
+                "prefix_label": 0,
+                "prefix_name": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_format",
+                    "operator": "==",
+                    "value": "audio"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]

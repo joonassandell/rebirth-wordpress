@@ -1,0 +1,46 @@
+{
+    "key": "group_5ea6a99e24ebe",
+    "title": "Shared Component",
+    "fields": [
+        {
+            "key": "field_5ea6a9aa7a0bf",
+            "label": "Choose Component Type",
+            "name": "shared_component_type",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "component_type",
+            "field_type": "select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 1,
+            "load_terms": 1,
+            "return_format": "id",
+            "multiple": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "shared_components"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "Custom Post Type",
+    "modified": 1588144909
+}
