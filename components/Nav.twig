@@ -1,7 +1,7 @@
-{% if nav_links %}
+{% if links %}
   <nav class="Nav Nav--default">
     <ul>
-      {% for item in nav_links %}
+      {% for item in links %}
         <li class="Nav-item {{ item.active == item.id ?  'is-active' }}">
           <a class="Nav-link" href="{{ item.link }}">
             <span class="Nav-icon"></span>

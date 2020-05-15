@@ -1,26 +1,28 @@
-<article class="Article Article--default">
-  <h1 class="Article-heading">
-    {% if link %}<a href="{{ link }}">{% endif %}
-      {{ heading }}
-    {% if link %}</a>{% endif %}
-  </h1>
-  {% if date or cat %}
-    <ul class="Article-meta">
-      {% if date %}
-        <li class="Article-meta-item">{{ date }}</li>
-      {% endif %}
-      {% if cat %}
-        <li class="Article-meta-item">
-          {% if cat_link %}<a href="{{ cat_link }}">{% endif %}
-            {{ cat }}
-          {% if cat_link %}</a>{% endif %}
-        </li>
-      {% endif %}
-    </ul>
-  {% endif %}
-  {% if excerpt %}
-    <p class="Article-excerpt">
-      {{ excerpt }}
-    </p>
-  {% endif %}
-</article>
+{% if heading %}
+  <article class="Article Article--default">
+    <h1 class="Article-heading">
+      {% if link %}<a href="{{ link }}">{% endif %}
+        {{ heading }}
+      {% if link %}</a>{% endif %}
+    </h1>
+    {% if date or cat %}
+      <ul class="Article-meta">
+        {% if date %}
+          <li class="Article-meta-item">{{ date }}</li>
+        {% endif %}
+        {% if cat %}
+          <li class="Article-meta-item">
+            {% if cat_link %}<a href="{{ cat_link }}">{% endif %}
+              {{ cat }}
+            {% if cat_link %}</a>{% endif %}
+          </li>
+        {% endif %}
+      </ul>
+    {% endif %}
+    {% if excerpt %}
+      <p class="Article-excerpt">
+        {{ excerpt }}
+      </p>
+    {% endif %}
+  </article>
+{% endif %}

@@ -1,6 +1,6 @@
-{% if list_items %}
+{% if items %}
   <ul class="List List--default">
-    {% for item in list_items %}
+    {% for item in items %}
       <li class="List-item">
         <span class="List-meta">{{ item.meta }}</span>
         <a class="List-link" href="{{ item.link }}">
@@ -8,5 +8,5 @@
         </a>
       </li>
     {% endfor %}
-  </ul
+  </ul>
 {% endif %}
