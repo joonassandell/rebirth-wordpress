@@ -1,8 +1,8 @@
-{% if links %}
+{% if items %}
   <nav class="Nav Nav--default">
     <ul>
-      {% for item in links %}
-        <li class="Nav-item {{ item.active == item.id ?  'is-active' }}">
+      {% for item in items %}
+        <li class="Nav-item {{ item.active ?  'is-active' }}">
           <a class="Nav-link" href="{{ item.link }}">
             <span class="Nav-icon"></span>
             <span class="Nav-heading">{{ item.heading }}</span>

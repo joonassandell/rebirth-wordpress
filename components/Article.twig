@@ -1,10 +1,10 @@
 {% if heading %}
   <article class="Article Article--default">
-    <h1 class="Article-heading">
+    <h3 class="Article-heading">
       {% if link %}<a href="{{ link }}">{% endif %}
         {{ heading }}
       {% if link %}</a>{% endif %}
-    </h1>
+    </h3>
     {% if date or cat %}
       <ul class="Article-meta">
         {% if date %}
