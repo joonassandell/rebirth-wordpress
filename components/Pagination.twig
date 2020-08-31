@@ -1,4 +1,4 @@
-{% if query %}
+{% if query.pagination.pages %}
   <ul class="Pagination">
     {% if query.pagination.prev %}
       <li class="Pagination-item {{ query.pagination.prev.link ? : 'is-hidden'}}">

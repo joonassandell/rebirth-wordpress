@@ -5,12 +5,12 @@
   "main": "README.md",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joonasy/rebirth-wordpress.git"
+    "url": "git+https://github.com/joonassandell/rebirth-wordpress.git"
   },
-  "author": "Joonas Ylitalo",
+  "author": "Joonas Sandell",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/joonasy/rebirth-wordpress/issues"
+    "url": "https://github.com/joonassandell/rebirth-wordpress/issues"
   },
-  "homepage": "https://github.com/joonasy/rebirth-wordpress#readme"
+  "homepage": "https://github.com/joonassandell/rebirth-wordpress#readme"
 }
